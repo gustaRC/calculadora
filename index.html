@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <h3>Gustavo Rodrigues</h3>
+    <main>
+        <div id="blocomaior">
+            <div class="calculadora">
+                <p id="resultado"></p>
+                <table class="button">
+                    <tr>
+                        <td><button onclick="inNumber('7')">7</button></td>
+                        <td><button onclick="inNumber('8')">8</button></td>
+                        <td><button onclick="inNumber('9')">9</button></td>                
+                        <td><button id="delbutton" onclick="apagar()">DEL</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="inNumber('4')">4</button></td>
+                        <td><button onclick="inNumber('5')">5</button></td>
+                        <td><button onclick="inNumber('6')">6</button></td>                
+                        <td><button id="botaoprincipal" onclick="inNumber('+')">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="inNumber('1')">1</button></td>
+                        <td><button onclick="inNumber('2')">2</button></td>
+                        <td><button onclick="inNumber('3')">3</button></td>                
+                        <td><button id="botaoprincipal" onclick="inNumber('-')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="inNumber('.')">,</button></td>
+                        <td><button onclick="inNumber('0')">0</button></td>
+                        <td><button id="botaoprincipal" onclick="inNumber('/')">/</button></td>                
+                        <td><button id="botaoprincipal" onclick="inNumber('*')">x</button></td>
+                    </tr>
+                </table>
+                <div class="blocofinal">
+                    <button id="resetbutton" onclick="resetar()"><img src="./img/reseticon.png" class="formatreset"></button>
+                    <button id="resultbutton" onclick="calcular()">=</button>
+                </div>        
+            </div>
+        </div>
+    </main>
+    <script src="js.js"></script>
+</body>
+</html>
